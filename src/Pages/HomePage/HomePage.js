@@ -1,7 +1,10 @@
+import Main from "../../Partials/Main/Main"
 
 const HomePage = () => {
   return (
-    <div>HomePage</div>
+    <Main>
+      <h1>Home</h1>
+    </Main>
   )
 }
 

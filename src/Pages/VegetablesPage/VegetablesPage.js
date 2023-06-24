@@ -1,7 +1,10 @@
+import Main from "../../Partials/Main/Main"
 
 const VegetablesPage = () => {
   return (
-    <div>VegetablesPage</div>
+    <Main>
+      <h1>Vegetables</h1>
+    </Main>
   )
 }
 

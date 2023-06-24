@@ -1,0 +1,16 @@
+main {
+  position: relative;
+  margin-top: 150px;
+  background-color: white;
+  padding: 50px;
+  border-radius: 15px;
+
+  h1 {
+    position: absolute;
+    font-size: 12rem;
+    font-weight: 900;
+    color: #C6C736;
+    top: -117%;
+    left: 5px;
+  }
+}
