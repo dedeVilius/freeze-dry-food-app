@@ -1,0 +1,30 @@
+nav {
+  margin-top: 100px;
+
+  &.main-nav {
+    display: flex;
+    justify-content: center;
+
+    .nav-list {
+
+      ul {
+
+        li {
+          display: inline-block;
+          padding-right: 30px;
+
+          a {
+            font-size: 2.3rem;
+            font-family: 'Inter';
+            font-weight: 900;
+            color: rgba(0, 0, 0, 0.25);
+
+            &.nav-link.active {
+              color: #C6C736;
+            }
+          }
+        }
+      }
+    }
+  }
+}
