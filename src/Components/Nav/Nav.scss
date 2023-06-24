@@ -18,8 +18,36 @@ nav {
             font-weight: 900;
             color: rgba(0, 0, 0, 0.25);
 
-            &.nav-link.active {
-              color: #C6C736;
+            &.nav-link {
+              position: relative;
+              transition: color 0.5s ease;
+
+              &:before {
+                content: '';
+                position: absolute;
+                background-image: url(../../assets/img/snowflake.svg);
+                background-size: 30px 30px;
+                width: 30px;
+                height: 30px;
+                top: -30px;
+                left: 50%;
+                margin-left: calc(-30px / 2);
+                transform: scale(0);
+                transition: transform .3s cubic-bezier(0.610, 0.000, 0.405, 1.630);
+              }
+
+              &:hover {
+                color: #1E5162;
+              }
+
+              &.active {
+                position: relative;
+                color: #1E5162;
+
+                &:before {
+                  transform: scale(1);
+                }
+              }
             }
           }
         }
