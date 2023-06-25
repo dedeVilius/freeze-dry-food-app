@@ -5,7 +5,7 @@ import HomePage from './Pages/HomePage/HomePage';
 import SuppliersPage from './Pages/SuppliersPage/SuppliersPage';
 import VegetablesPage from './Pages/VegetablesPage/VegetablesPage';
 import LeftoversPage from './Pages/LeftoversPage/LeftoversPage';
-import SupplierPage from './Pages/HomePage/SupplierPage/SupplierPage';
+import SupplierPage from './Pages/SupplierPage/SupplierPage';
 
 function App() {
   return (

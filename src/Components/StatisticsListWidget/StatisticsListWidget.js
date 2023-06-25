@@ -3,7 +3,7 @@ import { Container } from "react-bootstrap"
 const StatisticsListWidget = () => {
   return (
     <Container>
-          <div>Labas</div>
+          <h1>Labas</h1>
     </Container>
   )
 }
