@@ -6,21 +6,28 @@ import '../SupplierListWidget/SupplierListWidget.scss'
 import Row from 'react-bootstrap/Row';
 import { Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import styled from "styled-components";
 
 const SupplierListWidget = () => {
+
+  const Title = styled.h2`
+    padding: 0 0 30px 50px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+  `
 
   const [suppliers, setSuppliers] = useState([]);
 
   useEffect(() => {
     axios.get(`${API_URL}/suppliers/?_embed=fruits`)
       .then(res => {
-        setSuppliers(res.data);
+        setSuppliers(res.data.toReversed());
       });
   }, []);
 
   const noSuppliersMessage = (
     <div className='no-suppliers-message'>
-      <blockquote>There is no sincerer love than the love of food...</blockquote>
+      <h2>There is no sincerer love than the love of food...</h2>
       <Link to='vegetables'><Button type='button'>Check our food groups</Button></Link>
     </div>
   )
@@ -31,6 +38,7 @@ const SupplierListWidget = () => {
 
   return (
     <div className='content-wrapper'>
+      <Title>Some of our suppliers</Title>
       <div className='supplier-list'>
         <Row>
           {suppliers.map(supplier => <SupplierItemWidget data={supplier} key={supplier.id} />)}
