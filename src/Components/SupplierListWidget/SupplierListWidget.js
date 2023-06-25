@@ -5,6 +5,7 @@ import SupplierItemWidget from "../SupplierItemWidget/SupplierItemWidget";
 import '../SupplierListWidget/SupplierListWidget.scss'
 import Row from 'react-bootstrap/Row';
 import { Button } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 const SupplierListWidget = () => {
 
@@ -17,6 +18,17 @@ const SupplierListWidget = () => {
       });
   }, []);
 
+  const noSuppliersMessage = (
+    <div className='no-suppliers-message'>
+      <blockquote>There is no sincerer love than the love of food...</blockquote>
+      <Link to='vegetables'><Button type='button'>Check our food groups</Button></Link>
+    </div>
+  )
+
+  if (!suppliers) {
+    return noSuppliersMessage;
+  }
+
   return (
     <div className='content-wrapper'>
       <div className='supplier-list'>
@@ -24,7 +36,7 @@ const SupplierListWidget = () => {
           {suppliers.map(supplier => <SupplierItemWidget data={supplier} key={supplier.id} />)}
         </Row>
       </div>
-      <Button type='button'>More Suppliers</Button>
+      <Link to='suppliers'><Button type='button'>More Suppliers</Button></Link>
     </div>
   )
 }
