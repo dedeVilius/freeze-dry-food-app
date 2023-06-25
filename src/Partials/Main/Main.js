@@ -1,8 +1,9 @@
 import '../Main/Main.scss';
 
-const Main = ({ children }) => {
+const Main = ({ children, classData }) => {
+
   return (
-    <main>
+    <main className={classData}>
       {children}
     </main>
   )

@@ -1,9 +1,13 @@
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import '../Nav/Nav.scss';
+import logo from '../../assets/img/logo.svg';
 
 const Nav = () => {
   return (
     <nav className='main-nav'>
+      <div className='brand-logo'>
+        <Link to='/'><img src={logo}></img></Link>
+      </div>
       <div className='nav-list'>
         <ul>
           <li>

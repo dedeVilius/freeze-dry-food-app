@@ -3,7 +3,24 @@ nav {
 
   &.main-nav {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+
+    .brand-logo {
+      
+      a {
+
+        img {
+          width: 30%;
+          transition: transform 0.5s ease;
+          
+          &:hover {
+            transform: rotate(20deg);
+          }
+        }
+      }
+    }
 
     .nav-list {
 

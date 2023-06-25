@@ -1,9 +1,12 @@
 import Main from "../../Partials/Main/Main"
+import { Container } from 'react-bootstrap';
 
 const HomePage = () => {
   return (
-    <Main>
-      <h1>Home</h1>
+    <Main classData='homePage'>
+      <Container>
+        <h1 className='homeTitle'>Home</h1>
+      </Container>
     </Main>
   )
 }

@@ -1,10 +1,13 @@
-import Main from "../../Partials/Main/Main"
+import Main from "../../Partials/Main/Main";
+import { Container } from 'react-bootstrap';
 
 const SuppliersPage = () => {
   return (
-    <Main>
-      <h1>Suppliers</h1>
-    </Main>
+    <Container>
+      <Main>
+        <h1>Suppliers</h1>
+      </Main>
+    </Container>
   )
 }
 

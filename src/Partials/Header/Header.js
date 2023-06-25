@@ -1,8 +1,11 @@
+import { Container } from "react-bootstrap"
 
 const Header = ({ children }) => {
   return (
     <header>
-      {children}
+      <Container>
+        {children}
+      </Container>
     </header>
   )
 }

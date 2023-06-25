@@ -1,19 +1,32 @@
 {
-  "posts": [
+  "suppliers": [
     {
       "id": 1,
-      "title": "json-server",
-      "author": "typicode"
+      "title": "Šeimos ūkis Avietinė",
+      "slogan": "Šviežios uogos, avietės, gervuogės, putino uogos, sausmedžio uogos, uogų turizmas, prisiskink uogų pats, sodinukai.",
+      "description": "Esame šeimos ūkis. Auginame įvairias uogas: avietes, gervuoges, putiną, sausmedį. Ateityje turėsime šilauogių, aronijų, desertinių šermukšnių. Aronijos ir sausmedžio uogos priskiriamos supermaisto kategorijai. Visos mūsų uogos turi NACIONALINĖS KOKYBĖS PRODUKTO sertifikatą, o tai reiškia, kad jas užauginame ypač tausodami aplinką ir realizuojame tik tą pačią rinkimo dieną.",
+      "logoUrl": "https://www.veik.rietave.lt/uploads/default/profiliai/20180907-114938.png",
+      "address": "Giliogirio km. M. Kavecko g. 19",
+      "phone": "+370 699 47419",
+      "email": "mazonas64@gmail.com",
+      "latitude": "55.750995",
+      "longtitude": "22.008998"
     }
   ],
-  "comments": [
+  "vegetables": [
     {
       "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "title": "beetroot",
+      "imageUrl": "",
+      "rank": 1
     }
   ],
-  "profile": {
-    "name": "typicode"
-  }
+  "fruits": [
+    {
+      "id": 1,
+      "title": "some comment",
+      "imageUrl": "",
+      "rank": 1
+    }
+  ]
 }
