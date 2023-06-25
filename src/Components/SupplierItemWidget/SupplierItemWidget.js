@@ -6,12 +6,11 @@ const SupplierItemWidget = ({ data }) => {
 
   const { title, slogan, fruits } = data;
 
-
   return (
     
       <Col className='supplier-item'>
         <Link to={'/suppliers/' + data.id}>
-        <div className='content-wrapper'>
+        <div className='supplier-item-wrapper'>
           <div className='title'>
             <h2>{title}</h2>
           </div>

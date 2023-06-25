@@ -4,7 +4,7 @@ const Main = ({ children, classData }) => {
 
   return (
     <main className={classData}>
-      {children}
+        {children}
     </main>
   )
 }

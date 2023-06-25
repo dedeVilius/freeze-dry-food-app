@@ -11,7 +11,7 @@ import styled from "styled-components";
 const SupplierListWidget = () => {
 
   const Title = styled.h2`
-    padding: 0 0 30px 50px;
+    padding-bottom: 30px;
     text-transform: uppercase;
     letter-spacing: 3px;
   `
@@ -39,7 +39,7 @@ const SupplierListWidget = () => {
   console.log(suppliers.length);
 
   return (
-    <div className='content-wrapper'>
+    <div className='suppliers-widget-wrapper'>
       <Title>Some of our suppliers</Title>
       <div className='supplier-list'>
         <Row>

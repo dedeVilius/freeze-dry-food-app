@@ -10,9 +10,9 @@ const HomePage = () => {
       <Container>
         <h1 className='homeTitle'>Home</h1>
         <SupplierListWidget />
+        <StatisticsListWidget />
       </Container>
     </Main>
-    <StatisticsListWidget />
     </>
   )
 }
