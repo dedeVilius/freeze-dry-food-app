@@ -4,6 +4,7 @@ import { API_URL } from '../../config';
 import SupplierItemWidget from "../SupplierItemWidget/SupplierItemWidget";
 import '../SupplierListWidget/SupplierListWidget.scss'
 import Row from 'react-bootstrap/Row';
+import { Button } from "react-bootstrap";
 
 const SupplierListWidget = () => {
 
@@ -23,6 +24,7 @@ const SupplierListWidget = () => {
           {suppliers.map(supplier => <SupplierItemWidget data={supplier} key={supplier.id} />)}
         </Row>
       </div>
+      <Button type='button'>More Suppliers</Button>
     </div>
   )
 }
