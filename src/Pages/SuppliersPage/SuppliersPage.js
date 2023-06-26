@@ -6,6 +6,9 @@ import { API_URL } from "../../config";
 import { Link } from "react-router-dom";
 import { Button } from "react-bootstrap";
 import '../SuppliersPage/SuppliersPage.scss'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faLocationDot, faPhone, faEnvelope } from "@fortawesome/free-solid-svg-icons";
+
 
 const SuppliersPage = () => {
 
@@ -30,9 +33,9 @@ const SuppliersPage = () => {
         </div>
         <div className='contacts'>
           <h2>Contacts</h2>
-          <span><Link to={`tel:` + supplier.phone}>{supplier.phone}</Link></span>
-          <span><Link to={`mailto:` + supplier.email}>{supplier.email}</Link></span>
-          <span>{supplier.address}</span>
+          <span><FontAwesomeIcon icon={faPhone} /><Link to={`tel:` + supplier.phone}>{supplier.phone}</Link></span>
+          <span><FontAwesomeIcon icon={faEnvelope} /><Link to={`mailto:` + supplier.email}>{supplier.email}</Link></span>
+          <span><FontAwesomeIcon icon={faLocationDot} />{supplier.address}</span>
           <Link to={'/suppliers/' + supplier.id}><Button type='button'>Check Supplier</Button></Link>
         </div>
       </div>

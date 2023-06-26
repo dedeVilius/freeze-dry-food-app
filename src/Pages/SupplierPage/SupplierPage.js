@@ -7,6 +7,8 @@ import { API_URL } from "../../config";
 import { Button } from "react-bootstrap";
 import '../SupplierPage/SupplierPage.scss';
 import styled from "styled-components";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faLocationDot, faPhone, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 const SupplierPage = () => {
 
@@ -66,8 +68,9 @@ const SupplierPage = () => {
             </div>
             <h2>Contacts</h2>
             <div className='contacts'>
-              <span><Link to={`tel:` + supplier.phone}>{supplier.phone}</Link></span>
-              <span><Link to={`mailto:` + supplier.email}>{supplier.email}</Link></span>
+              <span><FontAwesomeIcon icon={faPhone} /><Link to={`tel:` + supplier.phone}>{supplier.phone}</Link></span>
+              <span><FontAwesomeIcon icon={faEnvelope} /><Link to={`mailto:` + supplier.email}>{supplier.email}</Link></span>
+              <span><FontAwesomeIcon icon={faLocationDot} />{supplier.address}</span>
             </div>
           </Col>
         </Row>

@@ -11,7 +11,7 @@ import styled from "styled-components";
 const SupplierListWidget = () => {
 
   const Title = styled.h2`
-    padding-bottom: 30px;
+    padding-bottom: 20px;
     text-transform: uppercase;
     letter-spacing: 3px;
   `
