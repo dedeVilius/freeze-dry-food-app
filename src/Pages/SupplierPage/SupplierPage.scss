@@ -22,9 +22,10 @@
         line-height: 2.3rem;
 
         &.special {
-          font-size: 2.4rem;
-          font-weight: 700;
-          line-height: 3.4rem;
+          color: #1E5162;
+          font-size: 2rem;
+          font-weight: 800;
+          line-height: 3rem;
         }
       }
     }
@@ -50,7 +51,7 @@
 
     .google-maps {
       position: relative;
-      padding-bottom: 75%; // This is the aspect ratio
+      padding-bottom: 75%;
       height: 0;
       overflow: hidden;
       margin-bottom: 35px;
@@ -88,4 +89,29 @@
       }
     }
   }
+}
+
+@media screen and (max-width: 1199px) {
+  .supplier-wrapper {
+    flex-direction: column-reverse;
+    gap: 20px;
+
+    .left-side {
+      width: 100%;
+
+      a {
+        display: block;
+        text-align: center;
+      }
+
+      button {
+        width: 50%;
+      }
+    }
+
+    .right-side {
+      width: 100%;
+    }
+  }
+
 }

@@ -15,6 +15,14 @@ const SupplierPage = () => {
   const Title = styled.h1`
     font-size: 6rem;
     top: -58px;
+    @media screen and (max-width: 991px) {
+      font-size: 5rem;
+      top: -48px;
+    }
+    @media screen and (max-width: 767px) {
+      font-size: 4rem;
+      top: -39px;
+    }
   `
 
   const { id } = useParams();

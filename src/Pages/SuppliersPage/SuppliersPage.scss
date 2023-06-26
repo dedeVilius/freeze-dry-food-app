@@ -107,6 +107,8 @@
       }
 
       .contacts {
+        border-bottom: 1px solid #efefef;
+        padding-bottom: 20px;
 
         a {
           text-align: center;
@@ -114,6 +116,17 @@
           button {
             width: 50%;
           }
+        }
+      }
+
+      .description {
+        border-right: none;
+      }
+
+      &:last-child {
+
+        .contacts {
+          border-bottom: none;
         }
       }
     }
