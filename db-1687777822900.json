@@ -23,6 +23,18 @@
       "logoUrl": "https://www.veik.rietave.lt/uploads/default/profiliai/20180907-114938.png",
       "latitude": "55.750995",
       "longtitude": "22.008998"
+    },
+    {
+      "id": 3,
+      "title": "Šeimos ūkis Avietinė",
+      "slogan": "Šviežios uogos, avietės, gervuogės, putino uogos, sausmedžio uogos, uogų turizmas, prisiskink uogų pats, sodinukai.",
+      "description": "Esame šeimos ūkis. Auginame įvairias uogas: avietes, gervuoges, putiną, sausmedį. Ateityje turėsime šilauogių, aronijų, desertinių šermukšnių. Aronijos ir sausmedžio uogos priskiriamos supermaisto kategorijai. Visos mūsų uogos turi NACIONALINĖS KOKYBĖS PRODUKTO sertifikatą, o tai reiškia, kad jas užauginame ypač tausodami aplinką ir realizuojame tik tą pačią rinkimo dieną.",
+      "address": "Giliogirio km. M. Kavecko g. 19",
+      "phone": "+370 699 47419",
+      "email": "mazonas64@gmail.com",
+      "logoUrl": "https://www.veik.rietave.lt/uploads/default/profiliai/20180907-114938.png",
+      "latitude": "55.750995",
+      "longtitude": "22.008998"
     }
   ],
   "vegetables": [
@@ -47,6 +59,13 @@
       "title": "Raspberry",
       "imageUrl": "https://scontent.fplq1-2.fna.fbcdn.net/v/t1.15752-9/355888103_1463983517688024_1371230049488704456_n.png?_nc_cat=102&ccb=1-7&_nc_sid=ae9488&_nc_ohc=1fStVnkJcEMAX954qQT&_nc_ht=scontent.fplq1-2.fna&oh=03_AdRzlCl5dfWNEOliOF3wQZZDYZoS8yDTGWWOWULdE41QHA&oe=64BFA73D",
       "supplierId": 1
+    },
+    {
+      "id": 3,
+      "rank": 3,
+      "title": "Mulberry",
+      "imageUrl": "https://scontent.fplq1-2.fna.fbcdn.net/v/t1.15752-9/356186170_236535912481503_3127737765073312961_n.png?stp=dst-png_s2048x2048&_nc_cat=108&ccb=1-7&_nc_sid=ae9488&_nc_ohc=JneZKpqPhrIAX_-SrSh&_nc_ht=scontent.fplq1-2.fna&oh=03_AdQv-1YyruoIXeurpEICSNGi8mAcpfX0nMcRXLakha2PAQ&oe=64BFA7E5",
+      "supplierId": 3
     }
   ]
 }

@@ -1,5 +1,5 @@
 import { Col, Container, Row } from "react-bootstrap";
-import { Link, useParams } from "react-router-dom";
+import { Link, useNavigate, useParams } from "react-router-dom";
 import Main from "../../Partials/Main/Main";
 import axios from "axios";
 import { useEffect, useState } from "react";
@@ -19,12 +19,19 @@ const SupplierPage = () => {
 
   const [supplier, setSupplier] = useState([]);
 
+  const navigate = useNavigate();
+
   useEffect(() => {
     axios.get(`${API_URL}/suppliers/${id}`)
       .then(res => {
         setSupplier(res.data);
       });
   }, [id]);
+
+  const deleteHandler = () => {
+    axios.delete(`${API_URL}/suppliers/${id}`)
+      .then(data => navigate('/suppliers'))
+  }
 
   const googleMapsElement = (
     <iframe src={'https://maps.google.com/maps?q=' + supplier.latitude + ',' + supplier.longtitude + '&t=&z=15&ie=UTF8&iwloc=&output=embed'}
@@ -51,7 +58,7 @@ const SupplierPage = () => {
               <p className='special'>{supplier.slogan}</p>
               <p>{supplier.description}</p>
             </div>
-            <Link><Button type='button'>Remove Supplier</Button></Link>
+            <Link><Button type='button' onClick={deleteHandler}>Remove Supplier</Button></Link>
           </Col>
           <Col sm={4} className='right-side'>
             <div className='google-maps'>
