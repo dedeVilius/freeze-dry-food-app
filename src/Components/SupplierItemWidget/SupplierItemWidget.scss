@@ -42,3 +42,16 @@
     text-decoration: none;
   }
 }
+
+@media screen and (max-width: 991px) {
+  .supplier-item {
+    border-right: none;
+    border-bottom: 1px solid #efefef;
+    padding-bottom: 50px;
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+
+}

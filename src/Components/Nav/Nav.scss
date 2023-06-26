@@ -8,13 +8,13 @@ nav {
     padding: 0 50px;
 
     .brand-logo {
-      
+
       a {
 
         img {
           width: 30%;
           transition: transform 0.5s ease;
-          
+
           &:hover {
             transform: rotate(20deg);
           }
@@ -63,6 +63,45 @@ nav {
 
                 &:before {
                   transform: scale(1);
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  nav {
+
+    &.main-nav {
+      justify-content: center;
+
+      .brand-logo {
+
+        a {
+          display: flex;
+          justify-content: center;
+        }
+      }
+
+      .nav-list {
+
+        ul {
+
+          li {
+            display: block;
+
+            a {
+
+              &.nav-link {
+
+                &:before {
+                  left: -30%;
+                  top: 0;
+                  margin-left: 0;
                 }
               }
             }
