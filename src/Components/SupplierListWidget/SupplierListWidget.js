@@ -36,8 +36,6 @@ const SupplierListWidget = () => {
     return noSuppliersMessage;
   }
 
-  console.log(suppliers.length);
-
   return (
     <div className='suppliers-widget-wrapper'>
       <Title>Some of our suppliers</Title>

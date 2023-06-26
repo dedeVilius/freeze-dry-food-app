@@ -1,0 +1,51 @@
+.supplier-wrapper {
+
+  .left-side {
+
+    .image {
+      margin-bottom: 10px;
+
+      img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+        border-radius: 10px;
+      }
+    }
+
+    .description {
+      padding: 20px 0;
+
+      p {
+        font-size: 1.4rem;
+        color: #252525;
+        line-height: 2.3rem;
+
+        &.special {
+          font-size: 1.6rem;
+          font-weight: 700;
+        }
+      }
+    }
+  }
+
+  button {
+    font-size: 1.6rem;
+    background-color: rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+    padding: 10px 20px;
+    border: none;
+
+    &:hover {
+      background-color: #F1D142;
+    }
+
+    &:active {
+      background-color: #F1D142!important;
+    }
+  }
+
+  .right-side {
+
+  }
+}

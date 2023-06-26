@@ -12,7 +12,7 @@ const SuppliersPage = () => {
   const [suppliers, setSuppliers] = useState([]);
 
   useEffect(() => {
-    axios.get(`${API_URL}/suppliers/?_embed=fruits`)
+    axios.get(`${API_URL}/suppliers/`)
       .then(res => {
         setSuppliers(res.data.toReversed());
       });
@@ -33,7 +33,7 @@ const SuppliersPage = () => {
           <span><Link to={`tel:` + supplier.phone}>{supplier.phone}</Link></span>
           <span><Link to={`mailto:` + supplier.email}>{supplier.email}</Link></span>
           <span>{supplier.address}</span>
-          <Link to={'/suppliers/' + supplier.id}><Button type='button'>Check this supplier</Button></Link>
+          <Link to={'/suppliers/' + supplier.id}><Button type='button'>Check Supplier</Button></Link>
         </div>
       </div>
     )
