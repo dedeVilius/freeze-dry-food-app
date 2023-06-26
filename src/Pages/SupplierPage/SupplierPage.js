@@ -26,12 +26,24 @@ const SupplierPage = () => {
       });
   }, [id]);
 
+  const googleMapsElement = (
+    <iframe src={'https://maps.google.com/maps?q=' + supplier.latitude + ',' + supplier.longtitude + '&t=&z=15&ie=UTF8&iwloc=&output=embed'}
+      width="600"
+      height="450"
+      style={{ border: 0 }}
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+      title="googleMapsFrame">
+    </iframe>
+  )
+
   return (
     <Container>
       <Main>
         <Title>{supplier.title}</Title>
         <Row className='supplier-wrapper'>
-          <Col className='left-side'>
+          <Col sm={8} className='left-side'>
             <div className='image'>
               <img src={supplier.logoUrl} alt='Supplier logo'></img>
             </div>
@@ -41,11 +53,15 @@ const SupplierPage = () => {
             </div>
             <Link><Button type='button'>Remove Supplier</Button></Link>
           </Col>
-          <Col className='right-side'>
+          <Col sm={4} className='right-side'>
+            <div className='google-maps'>
+              {googleMapsElement}
+            </div>
             <h2>Contacts</h2>
-            <span><Link></Link></span>
-            <span><Link></Link></span>
-            <span><Link></Link></span>
+            <div className='contacts'>
+              <span><Link to={`tel:` + supplier.phone}>{supplier.phone}</Link></span>
+              <span><Link to={`mailto:` + supplier.email}>{supplier.email}</Link></span>
+            </div>
           </Col>
         </Row>
       </Main>

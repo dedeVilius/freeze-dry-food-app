@@ -14,7 +14,7 @@
     }
 
     .description {
-      padding: 20px 0;
+      padding: 10px 0;
 
       p {
         font-size: 1.4rem;
@@ -22,8 +22,9 @@
         line-height: 2.3rem;
 
         &.special {
-          font-size: 1.6rem;
+          font-size: 2.4rem;
           font-weight: 700;
+          line-height: 3.4rem;
         }
       }
     }
@@ -41,11 +42,45 @@
     }
 
     &:active {
-      background-color: #F1D142!important;
+      background-color: #F1D142 !important;
     }
   }
 
   .right-side {
 
+    .google-maps {
+      position: relative;
+      padding-bottom: 75%; // This is the aspect ratio
+      height: 0;
+      overflow: hidden;
+      margin-bottom: 35px;
+
+      iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100% !important;
+        height: 100% !important;
+      }
+    }
+
+    h2 {
+      font-family: "Inter";
+      font-size: 3.1rem;
+      font-weight: 900;
+      color: #1E5162;
+      margin-bottom: 10px;
+    }
+
+    .contacts {
+      display: flex;
+      flex-direction: column;
+
+      span {
+        font-size: 1.4rem;
+        color: #252525;
+        line-height: 2.3rem;
+      }
+    }
   }
 }
