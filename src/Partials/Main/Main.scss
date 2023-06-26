@@ -22,3 +22,13 @@ main {
     }
   }
 }
+
+@media screen and (max-width: 991px) {
+  main {
+
+    h1 {
+      font-size: 8rem;
+      top: -78px;
+    }
+  }
+}

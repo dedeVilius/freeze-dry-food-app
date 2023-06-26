@@ -66,3 +66,56 @@
     }
   }
 }
+
+@media screen and (max-width: 1199px) {
+  .supplier-list-wrapper {
+
+    .supplier-item-wrapper {
+
+      .description,
+      .contacts {
+        p,
+        span {
+          font-size: 1.3rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .supplier-list-wrapper {
+
+    .supplier-item-wrapper {
+      display: grid;
+      grid-template-columns: 1fr;
+
+      .image {
+        text-align: center;
+
+        img {
+          width: 50%;
+        }
+      }
+
+      .description,
+      .contacts {
+        p,
+        span {
+          font-size: 1.4rem;
+        }
+      }
+
+      .contacts {
+
+        a {
+          text-align: center;
+
+          button {
+            width: 50%;
+          }
+        }
+      }
+    }
+  }
+}
