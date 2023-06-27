@@ -1,0 +1,117 @@
+.supplier-wrapper {
+
+  .left-side {
+
+    .image {
+      margin-bottom: 10px;
+
+      img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+        border-radius: 10px;
+      }
+    }
+
+    .description {
+      padding: 10px 0;
+
+      p {
+        font-size: 1.4rem;
+        color: #252525;
+        line-height: 2.3rem;
+
+        &.special {
+          color: #1E5162;
+          font-size: 2rem;
+          font-weight: 800;
+          line-height: 3rem;
+        }
+      }
+    }
+  }
+
+  button {
+    font-size: 1.6rem;
+    background-color: rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+    padding: 10px 20px;
+    border: none;
+
+    &:hover {
+      background-color: #F1D142;
+    }
+
+    &:active {
+      background-color: #F1D142 !important;
+    }
+  }
+
+  .right-side {
+
+    .google-maps {
+      position: relative;
+      padding-bottom: 75%;
+      height: 0;
+      overflow: hidden;
+      margin-bottom: 35px;
+
+      iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100% !important;
+        height: 100% !important;
+      }
+    }
+
+    h2 {
+      font-family: "Inter";
+      font-size: 3.1rem;
+      font-weight: 900;
+      color: #1E5162;
+      margin-bottom: 10px;
+    }
+
+    .contacts {
+      display: flex;
+      flex-direction: column;
+
+      span {
+        font-size: 1.4rem;
+        color: #252525;
+        line-height: 2.3rem;
+
+        svg {
+          color: #1E5162;
+          padding-right: 10px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .supplier-wrapper {
+    flex-direction: column-reverse;
+    gap: 20px;
+
+    .left-side {
+      width: 100%;
+
+      a {
+        display: block;
+        text-align: center;
+      }
+
+      button {
+        width: 50%;
+      }
+    }
+
+    .right-side {
+      width: 100%;
+    }
+  }
+
+}

@@ -1,0 +1,58 @@
+.supplier-item {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-wrap: wrap;
+  border-right: 1px solid #efefef;
+
+  .supplier-item-wrapper {
+    padding: 30px;
+  }
+
+  .title {
+    padding: 10px 20px;
+
+    h2 {
+      font-family: 'Inter';
+      font-size: 3.1rem;
+      font-weight: 900;
+      color: #1E5162;
+    }
+  }
+
+  .slogan {
+    margin-bottom: 20px;
+
+    p {
+      font-size: 1.4rem;
+      color: #252525;
+      line-height: 2.3rem;
+    }
+  }
+
+  img {
+    width: 30%;
+    object-fit: cover;
+  }
+
+  &:last-child {
+    border-right: none;
+  }
+
+  a {
+    text-decoration: none;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .supplier-item {
+    border-right: none;
+    border-bottom: 1px solid #efefef;
+    padding-bottom: 50px;
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+
+}

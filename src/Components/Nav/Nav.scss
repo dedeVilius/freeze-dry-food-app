@@ -1,0 +1,113 @@
+nav {
+  margin-top: 100px;
+
+  &.main-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+
+    .brand-logo {
+
+      a {
+
+        img {
+          width: 30%;
+          transition: transform 0.5s ease;
+
+          &:hover {
+            transform: rotate(20deg);
+          }
+        }
+      }
+    }
+
+    .nav-list {
+
+      ul {
+
+        li {
+          display: inline-block;
+          padding-right: 30px;
+
+          a {
+            font-size: 2.3rem;
+            font-weight: 900;
+            color: rgba(0, 0, 0, 0.25);
+
+            &.nav-link {
+              position: relative;
+              transition: color 0.5s ease;
+
+              &:before {
+                content: '';
+                position: absolute;
+                background-image: url(../../assets/img/snowflake.svg);
+                background-size: 30px 30px;
+                width: 30px;
+                height: 30px;
+                top: -30px;
+                left: 50%;
+                margin-left: calc(-30px / 2);
+                transform: scale(0);
+                transition: transform .3s cubic-bezier(0.610, 0.000, 0.405, 1.630);
+              }
+
+              &:hover {
+                color: #1E5162;
+              }
+
+              &.active {
+                position: relative;
+                color: #1E5162;
+
+                &:before {
+                  transform: scale(1);
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  nav {
+
+    &.main-nav {
+      justify-content: center;
+
+      .brand-logo {
+
+        a {
+          display: flex;
+          justify-content: center;
+        }
+      }
+
+      .nav-list {
+
+        ul {
+
+          li {
+            display: block;
+
+            a {
+
+              &.nav-link {
+
+                &:before {
+                  left: -30%;
+                  top: 0;
+                  margin-left: 0;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
