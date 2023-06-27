@@ -21,7 +21,7 @@ const SupplierListWidget = () => {
   useEffect(() => {
     axios.get(`${API_URL}/suppliers/?_embed=fruits`)
       .then(res => {
-        setSuppliers(res.data.toSpliced(3).toReversed());
+        setSuppliers(res.data.toReversed().toSpliced(3));
       });
   }, []);
 
