@@ -28,23 +28,25 @@ const SupplierListWidget = () => {
   const noSuppliersMessage = (
     <div className='no-suppliers-message'>
       <h2>There is no sincerer love than the love of food...</h2>
-      <Link to='vegetables'><Button type='button'>Check our food groups</Button></Link>
+      <Link to='/food'><Button type='button'>Check our food groups</Button></Link>
     </div>
   )
 
-  if (!suppliers) {
-    return noSuppliersMessage;
-  }
-
   return (
     <div className='suppliers-widget-wrapper'>
-      <Title>Some of our suppliers</Title>
-      <div className='supplier-list'>
-        <Row>
-          {suppliers.map(supplier => <SupplierItemWidget data={supplier} key={supplier.id} />)}
-        </Row>
-      </div>
-      <Link to='suppliers'><Button type='button'>More Suppliers</Button></Link>
+       {suppliers && suppliers.length > 0 ? (
+      <>
+        <Title>Some of our suppliers</Title>
+        <div className='supplier-list'>
+          <Row>
+            {suppliers.map(supplier => <SupplierItemWidget data={supplier} key={supplier.id} />)}
+          </Row>
+        </div>
+        <Link to='suppliers'><Button type='button'>More Suppliers</Button></Link>
+      </>
+    ) : (
+      noSuppliersMessage
+    )}
     </div>
   )
 }

@@ -9,7 +9,6 @@ import '../SuppliersPage/SuppliersPage.scss'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLocationDot, faPhone, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
-
 const SuppliersPage = () => {
 
   const [suppliers, setSuppliers] = useState([]);
